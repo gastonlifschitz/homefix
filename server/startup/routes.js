@@ -1,0 +1,37 @@
+const express = require('express');
+const user = require('../routes/users');
+const employee = require('../routes/employees');
+const rubro = require('../routes/rubros');
+const error = require('../middleware/error');
+const auth = require('../routes/auth');
+const reviews = require('../routes/reviews');
+const admin = require('../routes/admin');
+const neighbour = require('../routes/neighbour');
+const neighborhood = require('../routes/neighborhood');
+const messages = require('../routes/messages');
+const chatMessages = require('../routes/chatMessages');
+const proposals = require('../routes/proposals');
+const chatInfo = require('../routes/chatInfo');
+const userGallery = require('../routes/userGallery');
+const updateLastSeen = require('../routes/updatedAt');
+const superAdmin = require('../routes/superAdmin');
+
+module.exports = function (app) {
+  app.use(express.json());
+  app.use('/api/users', user);
+  app.use('/api/superAdmin', superAdmin);
+  app.use('/api/employees', employee);
+  app.use('/api/rubros', rubro);
+  app.use('/api/auth', auth);
+  app.use('/api/reviews', reviews);
+  app.use('/api/admin', admin);
+  app.use('/api/neighbours', neighbour);
+  app.use('/api/neighborhoods', neighborhood);
+  app.use('/api/messages', messages);
+  app.use('/api/chats', chatMessages);
+  app.use('/api/proposals', proposals);
+  app.use('/api/chatInfo', chatInfo);
+  app.use('/api/userGallery', userGallery);
+  app.use('/api/updateLastSeen', updateLastSeen);
+  app.use(error);
+};

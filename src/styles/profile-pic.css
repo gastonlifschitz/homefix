@@ -1,0 +1,46 @@
+.container-user-profile {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image-user-profile {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-user-profile {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-left: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: grey;
+  top: 10px;
+}
+
+.overlay-user-profile:hover   {
+  opacity: .5;
+}
+
+.icon-user-profile  {
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icon-user-profile:hover {
+	font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-user-profile :hover {
+  color: #eee;
+}

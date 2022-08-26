@@ -1,0 +1,61 @@
+{
+  "port": "5001",
+  "host": "0.0.0.0",
+  "protocol": "http",
+  "db": "mongodb://localhost/homefix",
+  "db_test": "mongodb://localhost/homefix_test",
+  "db-server": "mongodb+srv://homefix:Gastonymica2021@homefixcluster.2i02j.mongodb.net/test",
+  "requiresAuth": true,
+  "jwtPrivateKey": "pf_secret",
+  "resetPasswordKey": "pf_secret-reset",
+  "areaTypes": [
+    "CARPINTER",
+    "PLUMER",
+    "GARDINER",
+    "BRICKLAYER",
+    "ELECTRICIAN",
+    "CLEANING",
+    "GAS",
+    "BABYSITTER",
+    "LOCKSMITH",
+    "MESSAGES",
+    "PAINTOR",
+    "TEACHER",
+    "TAXI",
+    "OTHER"
+  ],
+  "proposalStates": ["WAIT", "ACCEPT", "FINALIZED"],
+  "roles": {
+    "EMPLOYEE": {
+      "value": 0,
+      "name": "Employee",
+      "code": "E",
+      "endpoint": "employees",
+      "db_name": "employee"
+    },
+    "ADMIN": {
+      "value": 1,
+      "name": "Admin",
+      "code": "A",
+      "endpoint": "admin",
+      "db_name": "admin"
+    },
+    "NEIGHBOUR": {
+      "value": 2,
+      "name": "Neighbour",
+      "code": "N",
+      "endpoint": "neighbours",
+      "db_name": "neighbour"
+    },
+    "SUPER_ADMIN": {
+      "value": 3,
+      "name": "Super Admin",
+      "code": "S",
+      "u_name": "superAdmin",
+      "endpoint": "superAdmin"
+    }
+  },
+  "CLIENT_URL": "http://44.201.195.142:3000",
+  "CLIENT_URL-Dev": "http://localhost:3000",
+  "MIN_REVIEW_REPORT": 4
+}

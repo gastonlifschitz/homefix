@@ -1,0 +1,139 @@
+{
+  "areaTypes": [
+    "CARPINTER",
+    "PLUMER",
+    "GARDINER",
+    "BRICKLAYER",
+    "ELECTRICIAN",
+    "CLEANING",
+    "GAS",
+    "BABYSITTER",
+    "LOCKSMITH",
+    "MESSAGES",
+    "PAINTOR",
+    "TEACHER",
+    "TAXI",
+    "OTHER"
+  ],
+  "paymentMethods": ["Efectivo", "Tarjeta", "Mercado Pago", "Otros"],
+  "days": [
+    "Lunes",
+    "Martes",
+    "Miércoles",
+    "Jueves",
+    "Viernes",
+    "Sábado",
+    "Domingo"
+  ],
+  "timeFrames": ["Mañana", "Tarde", "Todo el día"],
+  "zones": ["CABA", "Zona Norte", "Zona Sur", "Zona Oeste"],
+  "baseURL-Dev": "http://localhost:5001",
+  "baseURL": "http://44.201.195.142:5001",
+  "CLIENT_URL": "http://44.201.195.142:3000",
+  "CLIENT_URL-Dev": "http://localhost:3000",
+  "tokenKey": "pf-token",
+  "roles": {
+    "EMPLOYEE": {
+      "value": 0,
+      "name": "Employee",
+      "code": "E",
+      "endpoint": "employees",
+      "u_name": "employee"
+    },
+    "ADMIN": {
+      "value": 1,
+      "name": "Admin",
+      "code": "A",
+      "endpoint": "admin",
+      "u_name": "admin"
+    },
+    "NEIGHBOUR": {
+      "value": 2,
+      "name": "Neighbour",
+      "code": "N",
+      "u_name": "neighbour",
+      "endpoint": "neighbours"
+    },
+    "SUPER_ADMIN": {
+      "value": 3,
+      "name": "Super Admin",
+      "code": "S",
+      "u_name": "superAdmin",
+      "endpoint": "superAdmin"
+    }
+  },
+  "cat": [
+    {
+      "id": 0,
+      "name": "Carpintero"
+    },
+    {
+      "id": 1,
+      "name": "Plomero"
+    },
+    {
+      "id": 2,
+      "name": "Jardinero"
+    },
+    {
+      "id": 3,
+      "name": "Albañil"
+    },
+    {
+      "id": 4,
+      "name": "Electricista"
+    },
+    {
+      "id": 5,
+      "name": "Limpieza"
+    },
+    {
+      "id": 6,
+      "name": "Gasista"
+    },
+    {
+      "id": 7,
+      "name": "Babysitter"
+    },
+    {
+      "id": 8,
+      "name": "Cerrajero"
+    },
+    {
+      "id": 9,
+      "name": "Mensajeria"
+    },
+    {
+      "id": 10,
+      "name": "Pintor"
+    },
+    {
+      "id": 11,
+      "name": "Profesores"
+    },
+    {
+      "id": 12,
+      "name": "Remis"
+    },
+    {
+      "id": 13,
+      "name": "Otros"
+    }
+  ],
+  "translations": {
+    "CARPINTER": "Carpintero",
+    "PLUMER": "Plomero",
+    "GARDINER": "Jardinero",
+    "BRICKLAYER": "Albañil",
+    "ELECTRICIAN": "Electricista",
+    "CLEANING": "Limpieza",
+    "GAS": "Gasista",
+    "BABYSITTER": "Babysitter",
+    "LOCKSMITH": "Cerrajero",
+    "MESSAGES": "Mensajeria",
+    "OTHER": "Otros",
+    "PAINTOR": "Pintor",
+    "TEACHER": "Profesores",
+    "TAXI": "Remis"
+  }
+}

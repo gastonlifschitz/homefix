@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "pf_secret",
+  "db": "homefix"
+}
